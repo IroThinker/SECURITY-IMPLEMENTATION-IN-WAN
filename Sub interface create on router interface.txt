@@ -1,0 +1,10 @@
+*Please be aware, there is only one interface create*
+
+MARK_BRANCH_R-01>enable 
+MARK_BRANCH_R-01 # configuration terminal 
+MARK_BRANCH_R-01 # interface gigabitEthernet 0/0 
+MARK_BRANCH_R-01 # no shutdown  
+MARK_BRANCH_R-01 # interface gigabitEthernet 0/0.10 
+MARK_BRANCH_R-01 # encapsulation dot1Q 10 
+MARK_BRANCH_R-01 # ip address 210.211.212.14 255.255.255.248 
+MARK_BRANCH_R-01 # (config-subif) # exit 

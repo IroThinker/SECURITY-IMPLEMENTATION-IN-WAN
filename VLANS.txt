@@ -1,0 +1,34 @@
+*pleas be aware regarding this code, those are for only one VLAN*
+
+creating VLANs 
+============
+
+CRE_TEAM_SW-01(config)#>enable 
+CRE_TEAM_SW-01# configuration terminal 
+CRE_TEAM_SW-01 (config)# vlan 10 
+CRE_TEAM_SW-01 (config-vlan) # exit 
+CRE_TEAM_SW-01 (config) # vlan 20 
+CRE_TEAM_SW-01 (config-vlan) # exit 
+CRE_TEAM_SW-01 (config) # vlan 30 
+CRE_TEAM_SW-01 (config-vlan) # exit 
+CRE_TEAM_SW-01 (config) # exit 
+
+
+port assigning for VLANs
+==========================
+CRE_TEAM_SW-01>enable 
+CRE_TEAM_SW-01 # configuration terminal 
+CRE_TEAM_SW-01(config) #interface rang fastEthernet 0/1-2 
+CRE_TEAM_SW-01(config-if-range) # switchport mode access  
+CRE_TEAM_SW-01(config-if-range) # switchport access vlan 10 
+CRE_TEAM_SW-01(config-if-range) # exit 
+
+
+Port trunking
+==============
+CRE_TEAM_SW-01>enable 
+CRE_TEAM_SW-01 # configuration terminal 
+CRE_TEAM_SW-01(config) #interface fastEthernet 0/5 
+CRE_TEAM_SW-01(config) #switchport mode trunk  
+CRE_TEAM_SW-01(config) #end 
+CRE_TEAM_SW-01 # write memory 

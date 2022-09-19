@@ -1,0 +1,14 @@
+*please be aware, This ACL for Development branch*
+
+DEV_BRANCH_R-01>enable 
+DEV_BRANCH_R-01# configuration terminal 
+DEV_BRANCH_R-01 (config) #ip access-list extended 120 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit tcp 210.211.212.56 0.0.0.7 210.211.212.32 0.0.0.3 eq ftp 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.80 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.72 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.0 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.40 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.8 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.16 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # permit ip 210.211.212.56 0.0.0.7 210.211.212.24 0.0.0.7 
+DEV_BRANCH_R-01 (config-ext-nacl) # exit 
