@@ -2,7 +2,7 @@
 NetworkSecurity Implementation In Wide Area Network
 I created this LAB environment for the assignment which is related to network security. So, in this scenario, I have configured the network using following implementations,  
 
--Routing and Switching 
+**-Routing and Switching 
 -SSH
 -RIP 
 -VLANs
@@ -11,7 +11,7 @@ I created this LAB environment for the assignment which is related to network se
 -FTP 
 -WEB Servers 
 -DNS 
--User control
+-User control**
 
 
 I created this scenario for the assignment which is related to network security. so, the scenario was implemented as follows,
